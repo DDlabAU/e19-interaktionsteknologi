@@ -7,7 +7,7 @@ For at kunne bruge det nye wifi-board, er vi nødt til at gøre følgende:
 3. Installere drivere
 
 ### 1: Download board-information  
-Åben indstillingerne i Arduino IDE'et ved at trykke ```File``` -> ```Preferences```. Indtast dette url: ```http://arduino.esp8266.com/stable/package_esp8266com_index.json``` i feltet ved nan "Aditional Boards Manager URLs" og tryk "OK".
+Åben indstillingerne i Arduino IDE'et ved at trykke ```File``` -> ```Preferences```. Indtast dette url: ```http://arduino.esp8266.com/stable/package_esp8266com_index.json``` i feltet ved navn "Aditional Boards Manager URLs" og tryk "OK".
 
 Åben så Boards Manager ved at klikke ```Tools``` -> ```Board:...``` -> ```Boards Manager```. Søg på "esp" og installer pakken ved navn esp8266 by ESP8266 Community".
 
