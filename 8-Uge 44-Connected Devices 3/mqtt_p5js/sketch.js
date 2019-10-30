@@ -9,7 +9,7 @@ function setup() {
   // -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
   client = mqtt.connect('mqtt://' + shiftrkey + ':' + shiftrsecret + '@broker.shiftr.io', {
 
-    id: 'p5id'
+    clientId: id
   });
 
   client.on('connect', function() {
@@ -18,7 +18,7 @@ function setup() {
 
     // HER SUBCRIBER VI TIL DE ADRESSER VI VIL LYTTE TIL
     // -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-    //client.subscribe('/hello');
+    client.subscribe('/etTopic');
     // client.unsubscribe('/example');
   });
 
@@ -33,7 +33,6 @@ function setup() {
 
 
   createCanvas(windowWidth, windowHeight);
-  publishMessage('/hello', 'world');
 }
 
 function draw() {
