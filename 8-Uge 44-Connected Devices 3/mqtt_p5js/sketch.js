@@ -1,14 +1,15 @@
-var key = 'try'; // key / username
-var secret = 'try'; // secret / password
-var client = 'id'
-
+var shiftrkey = 'e4ac501e'; // key / username
+var shiftrsecret = '1ea5eacc09ab0592'; // secret / password
+var id = 'p5id' // client id
+var client;
 
 function setup() {
 
   // MQTT TING START
   // -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-  client = mqtt.connect('mqtt://' + key + ':' + secret + '@broker.shiftr.io', {
-    clientId: client
+  client = mqtt.connect('mqtt://' + shiftrkey + ':' + shiftrsecret + '@broker.shiftr.io', {
+
+    id: 'p5id'
   });
 
   client.on('connect', function() {
@@ -17,7 +18,7 @@ function setup() {
 
     // HER SUBCRIBER VI TIL DE ADRESSER VI VIL LYTTE TIL
     // -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-    client.subscribe('/etTopic');
+    //client.subscribe('/hello');
     // client.unsubscribe('/example');
   });
 
@@ -32,6 +33,7 @@ function setup() {
 
 
   createCanvas(windowWidth, windowHeight);
+  publishMessage('/hello', 'world');
 }
 
 function draw() {
