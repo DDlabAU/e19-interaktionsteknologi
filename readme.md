@@ -13,7 +13,7 @@ For at kunne bruge det nye wifi-board, er vi nødt til at gøre følgende:
 
 
 ### 2: Installer MQTT Bibliotek
-Gå ind i ```Sketch``` -> ```Include Library``` -> ```Manage Libraries```, søg på "mqtt" og installer biblioteket ved navn "MQTT by Joel Gaehwiler".
+Gå ind i ```Sketch``` -> ```Include Library``` -> ```Manage Libraries```, søg på "mqtt" og installer biblioteket ved navn "MQTT" af Joel Gaehwiler".
 
 
 ### 3: Installer drivere  
